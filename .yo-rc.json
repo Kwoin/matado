@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.kwoin.matado",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "6.6.0",
+    "applicationType": "monolith",
+    "baseName": "Matado",
+    "packageName": "com.kwoin.matado",
+    "packageFolder": "com/kwoin/matado",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "YTI4MjNlMjBhYjViZTAzOGNjM2I3ZGJlZjE3YzkzNDQyMDczYjg2MjA1YjQ1MGE0OTE0YTNiYTUwNTI0ZmU2YmE2M2I4OWQwZmM5ZDA4Y2EzOWMxNTcyMzQ5YzRlNTM4ODZlOTQxYjhjODM5ZDE5ZTE5YjI2NzliOTY0NDNjOWM=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1578696545904,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": ["fr", "en"],
+    "blueprints": []
+  }
+}
