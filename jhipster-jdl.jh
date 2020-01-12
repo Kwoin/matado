@@ -1,0 +1,31 @@
+entity Recipee {
+  type RecipeeType required
+  name String required
+  description String
+}
+
+entity Keyword {
+  label String required
+}
+
+entity Ingredient {
+  name String required
+  description String
+}
+
+enum RecipeeType {
+  Salty,
+  Sweet,
+  Household
+}
+
+relationship ManyToMany {
+  Recipee{authors required} to User{recipees}
+  Recipee{keywords} to Keyword{recipees}
+  Recipee{ingredients} to Ingredient{recipees}
+}
+
+paginate Recipee with infinite-scroll
+paginate User with pagination
+service * with serviceClass
+filter *

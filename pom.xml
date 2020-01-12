@@ -9,6 +9,8 @@
     <packaging>jar</packaging>
     <name>Matado</name>
 
+    
+
     <repositories>
         <!-- jhipster-needle-maven-repository -->
     </repositories>
