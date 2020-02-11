@@ -1,0 +1,37 @@
+@import '../variables';
+
+.recepee-card {
+  width: 250px;
+  padding: 0px;
+  border-radius: 6px;
+  
+  .recepee-card-head {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 6px;
+    
+    h4 {
+      margin: 0px;
+    }
+  }
+  
+  .recepee-card-taglist {
+    padding: 0 3px 0 3px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 3px;
+    column-gap: 3px;
+  }
+
+  .recepee-card-foot {
+    padding: 0 5px 5px 5px;
+    display: flex;
+    justify-content: flex-end;
+    color: lightgray;
+    
+    a {
+      color: lightgray;
+    }
+  }
+}

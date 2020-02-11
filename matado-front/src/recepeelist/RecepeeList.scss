@@ -1,0 +1,10 @@
+@import "../variables";
+
+.recepee-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 15px;
+  width: 100vw;
+}
