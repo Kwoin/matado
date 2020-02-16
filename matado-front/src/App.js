@@ -4,12 +4,13 @@ import './App.scss';
 import RecepeeCard from "./recepeecard/RecepeeCard";
 import RecepeeList from "./recepeelist/RecepeeList";
 import Header from "./header/Header";
+import MainResult from "./main/result/MainResult";
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <RecepeeList/>
+      <MainResult/>
     </div>
   );
 }
