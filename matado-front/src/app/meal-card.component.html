@@ -1,0 +1,16 @@
+<div class="card">
+  <mat-card>
+    <mat-card-title>
+      {{meal.name}}
+    </mat-card-title>
+    <div class="chips">
+      <mat-chip-list [selectable]="false">
+        <mat-chip color="primary" selected>{{meal.type}}</mat-chip>
+        <mat-chip color="primary" selected *ngFor="let season of meal.seasons">{{season}}</mat-chip>
+        <mat-chip color="accent" selected *ngFor="let ingredient of meal.ingredients">{{ingredient}}</mat-chip>
+        <mat-chip *ngFor="let tag of meal.tags">{{tag}}</mat-chip>
+      </mat-chip-list>
+    </div>
+    <img mat-card-image [src]="'assets/' + (meal.image || 'default.jpg')"/>
+  </mat-card>
+</div>

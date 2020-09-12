@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  overflow: hidden;
+
+  .chips {
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease 500ms;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 -16px 0 -16px;
+    padding: 5px 5px 5px 5px;
+    height: 212px;
+
+    &:hover {
+      opacity: 100%;
+    }
+  }
+}
+
+
+
+:host ::ng-deep {
+  .mat-standard-chip {
+    min-height: 22px;
+    font-size: 12px;
+  }
+
+  .mat-card-image {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}

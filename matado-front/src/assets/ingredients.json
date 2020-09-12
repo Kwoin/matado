@@ -1,0 +1,22 @@
+[
+  {
+    "name": "carotte",
+    "seasons": []
+  },
+  {
+    "name": "concombre",
+    "seasons": ["printemps", "été"]
+  },
+  {
+    "name": "courgette",
+    "seasons": ["été", "automne"]
+  },
+  {
+    "name": "poivron",
+    "seasons": ["été"]
+  },
+  {
+    "name": "tomate",
+    "seasons": ["printemps", "été"]
+  }
+]
