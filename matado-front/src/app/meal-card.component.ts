@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Meal } from "./app.component";
+import { Meal } from '../../../matado-core/model';
 
 @Component({
   selector: 'app-meal-card',

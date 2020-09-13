@@ -2,52 +2,10 @@
   <mat-toolbar color="primary">
     <span>Matado</span>
     <span class="flex"></span>
-    <div class="actions">
-      <button *ngIf="!randomMeal; else backToMealsButton" mat-icon-button matTooltip="Un plat au hasard" (click)="selectRandomMeal()">
-        <mat-icon>emoji_objects</mat-icon>
-      </button>
-      <ng-template #backToMealsButton>
-        <button mat-icon-button matTooltip="Afficher la liste des plats" (click)="returnToMeals()">
-          <mat-icon>list</mat-icon>
-        </button>
-      </ng-template>
-    </div>
-    <div class="search">
-      <mat-form-field>
-        <mat-label>Recherche</mat-label>
-        <input #searchInput (keyup)="searchChange($event.target.value)"
-               matInput
-               placeholder="Plat, Ingrédient, Saison..."
-               [matAutocomplete]="auto"
-        >
-        <mat-autocomplete #auto="matAutocomplete" [displayWith]="addSearchWord" [autoActiveFirstOption]="true">
-          <mat-option *ngFor="let searchableWord of _searchableWords" [value]="searchableWord">
-            {{searchableWord}}
-          </mat-option>
-        </mat-autocomplete>
-        <mat-icon matPrefix>search</mat-icon>
-      </mat-form-field>
-    </div>
   </mat-toolbar>
-  <mat-paginator *ngIf="!randomMeal && _meals.length > 10"
-                 (page)="pageChange($event)"
-                 [pageSize]="10"
-                 [hidePageSize]="false"
-                 [length]="_meals.length"
-  ></mat-paginator>
 </nav>
 
-<main [class.shrink]="!randomMeal && _meals.length > 10">
-  <mat-grid-list [cols]="5" rowHeight="420" gutterSize="10">
-    <ng-container *ngIf="!randomMeal; else randomMealTile">
-      <mat-grid-tile *ngFor="let meal of _mealsToDisplay">
-        <app-meal-card [meal]="meal"></app-meal-card>
-      </mat-grid-tile>
-    </ng-container>
-    <ng-template #randomMealTile>
-      <mat-grid-tile>
-        <app-meal-card [meal]="randomMeal"></app-meal-card>
-      </mat-grid-tile>
-    </ng-template>
-  </mat-grid-list>
+<main>
+  <router-outlet></router-outlet>
 </main>
+

@@ -12,21 +12,27 @@ import { MatCardModule } from "@angular/material/card";
 import { MatChipsModule } from "@angular/material/chips";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
+import { HttpClientModule } from "@angular/common/http";
+import { LoginComponent } from './login/login.component';
+import { MealsComponent } from './meal/meals.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MealCardComponent
+    MealCardComponent,
+    LoginComponent,
+    MealsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
+    HttpClientModule,
     MatToolbarModule,
     MatIconModule,
     MatGridListModule,
@@ -35,6 +41,7 @@ import { MatAutocompleteModule } from "@angular/material/autocomplete";
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
+    ReactiveFormsModule,
     MatButtonModule,
     MatTooltipModule,
     MatPaginatorModule,

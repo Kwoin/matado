@@ -2,6 +2,10 @@
   display: flex;
   overflow: hidden;
 
+  .mat-card-title {
+    height: 40px;
+  }
+
   .chips {
     position: absolute;
     opacity: 0;
@@ -10,6 +14,12 @@
     margin: 0 -16px 0 -16px;
     padding: 5px 5px 5px 5px;
     height: 212px;
+    width: Calc(100% - 10px);
+
+    .mat-standard-chip {
+      margin: 2px;
+      padding: 7px 7px;
+    }
 
     &:hover {
       opacity: 100%;

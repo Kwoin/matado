@@ -2,17 +2,6 @@ nav {
   .flex {
     flex: 1 1 auto;
   }
-
-  .actions {
-    button {
-      margin-right: 7px;
-    }
-  }
-
-  .search {
-    font-size: 12px;
-    margin-top: 30px;
-  }
 }
 
 main {
@@ -21,10 +10,5 @@ main {
   height: Calc(100vh - 64px);
   overflow: auto;
   margin-top: 0;
-
-  &.shrink {
-    height: Calc(100vh - 64px - 56px);
-  }
-
 }
 
